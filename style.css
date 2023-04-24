@@ -1,5 +1,5 @@
 body {
-    background-color: #8E90A4;
+    background-color: #C7C6C6;
     color: white;
     font-family: ubuntu, sans-serif;
     display: flex;
@@ -48,6 +48,7 @@ img {
 
 .copy {
     font-size: 1.2rem;
+    text-shadow: 3px 3px 10px black;
 }
 
 form {
@@ -55,6 +56,16 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    box-shadow: 3px 3px 12px black;
+    border-radius: .4rem;
+    padding: 1rem;
+    background: rgba(188, 129, 191, 0.5);
+    margin-top: 2rem;
+    text-shadow: 3px 3px 10px black;
+}
+
+#formCopy {
+    font-size: 1.2rem;
 }
 
 .outerFormDiv {
@@ -80,4 +91,21 @@ button {
     border-radius: .4rem;
     font-size: 1rem;
     box-shadow: 3px 3px 12px black;
+}
+
+input {
+    font-family: ubuntu;
+}
+
+input:focus {
+    outline: none;
+    border-style: solid;
+    border-width: .3rem;
+    border-color: #BC81BF;
+}
+
+input:invalid {
+    border-style: solid;
+    border-width: .3rem;
+    border-color: #EE9ABD;
 }
